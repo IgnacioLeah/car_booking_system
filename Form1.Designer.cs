@@ -31,61 +31,61 @@
             this.panelSidebar = new CarBookRequest.GradientPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnRequests = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMain = new System.Windows.Forms.Panel();
             this.gradientPanel6 = new CarBookRequest.GradientPanel();
             this.lblPending = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.gradientPanel5 = new CarBookRequest.GradientPanel();
             this.lblRejected = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.gradientPanel4 = new CarBookRequest.GradientPanel();
             this.lblApproved = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.gradientPanel3 = new CarBookRequest.GradientPanel();
             this.lblAvailableCars = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.gradientPanel2 = new CarBookRequest.GradientPanel();
             this.lblRentedCars = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.gradientPanel1 = new CarBookRequest.GradientPanel();
             this.lblRenters = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelSidebar.SuspendLayout();
-            this.panelMain.SuspendLayout();
-            this.gradientPanel6.SuspendLayout();
-            this.gradientPanel5.SuspendLayout();
-            this.gradientPanel4.SuspendLayout();
-            this.gradientPanel3.SuspendLayout();
-            this.gradientPanel2.SuspendLayout();
-            this.gradientPanel1.SuspendLayout();
-            this.panelHeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelMain.SuspendLayout();
+            this.gradientPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.gradientPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.gradientPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.gradientPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.gradientPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.gradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panelHeader.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSidebar
@@ -109,7 +109,6 @@
             this.panelSidebar.Name = "panelSidebar";
             this.panelSidebar.Size = new System.Drawing.Size(262, 674);
             this.panelSidebar.TabIndex = 0;
-            this.panelSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSidebar_Paint);
             // 
             // label4
             // 
@@ -135,6 +134,17 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Admin";
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::CarBookRequest.Properties.Resources.user;
+            this.pictureBox4.Location = new System.Drawing.Point(24, 551);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(64, 59);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
+            // 
             // btnLogout
             // 
             this.btnLogout.BackColor = System.Drawing.Color.Salmon;
@@ -148,6 +158,18 @@
             this.btnLogout.TabIndex = 7;
             this.btnLogout.Text = "Log out";
             this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::CarBookRequest.Properties.Resources.carRent;
+            this.pictureBox3.Location = new System.Drawing.Point(29, 236);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(57, 46);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 6;
+            this.pictureBox3.TabStop = false;
             // 
             // btnRequests
             // 
@@ -161,6 +183,18 @@
             this.btnRequests.TabIndex = 5;
             this.btnRequests.Text = "          Book Requests";
             this.btnRequests.UseVisualStyleBackColor = false;
+            this.btnRequests.Click += new System.EventHandler(this.btnRequests_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::CarBookRequest.Properties.Resources.home;
+            this.pictureBox2.Location = new System.Drawing.Point(30, 148);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(57, 48);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
             // 
             // btnDashboard
             // 
@@ -199,6 +233,17 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Management";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::CarBookRequest.Properties.Resources.cars;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(133, 69);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.Color.LightGray;
@@ -235,10 +280,9 @@
             this.lblPending.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPending.Location = new System.Drawing.Point(69, 61);
             this.lblPending.Name = "lblPending";
-            this.lblPending.Size = new System.Drawing.Size(42, 25);
+            this.lblPending.Size = new System.Drawing.Size(102, 25);
             this.lblPending.TabIndex = 12;
-            this.lblPending.Text = "325";
-            this.lblPending.Click += new System.EventHandler(this.lblPending_Click);
+            this.lblPending.Text = "for display";
             // 
             // label17
             // 
@@ -250,6 +294,17 @@
             this.label17.Size = new System.Drawing.Size(81, 25);
             this.label17.TabIndex = 1;
             this.label17.Text = "Pending";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox10.Image = global::CarBookRequest.Properties.Resources.history;
+            this.pictureBox10.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(45, 41);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 11;
+            this.pictureBox10.TabStop = false;
             // 
             // gradientPanel5
             // 
@@ -271,10 +326,9 @@
             this.lblRejected.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRejected.Location = new System.Drawing.Point(74, 58);
             this.lblRejected.Name = "lblRejected";
-            this.lblRejected.Size = new System.Drawing.Size(42, 25);
+            this.lblRejected.Size = new System.Drawing.Size(102, 25);
             this.lblRejected.TabIndex = 12;
-            this.lblRejected.Text = "325";
-            this.lblRejected.Click += new System.EventHandler(this.lblRejected_Click);
+            this.lblRejected.Text = "for display";
             // 
             // label15
             // 
@@ -286,6 +340,17 @@
             this.label15.Size = new System.Drawing.Size(86, 25);
             this.label15.TabIndex = 1;
             this.label15.Text = "Rejected";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.Image = global::CarBookRequest.Properties.Resources.wrong;
+            this.pictureBox9.Location = new System.Drawing.Point(15, 9);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(47, 43);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 11;
+            this.pictureBox9.TabStop = false;
             // 
             // gradientPanel4
             // 
@@ -307,10 +372,9 @@
             this.lblApproved.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApproved.Location = new System.Drawing.Point(70, 51);
             this.lblApproved.Name = "lblApproved";
-            this.lblApproved.Size = new System.Drawing.Size(42, 25);
+            this.lblApproved.Size = new System.Drawing.Size(102, 25);
             this.lblApproved.TabIndex = 12;
-            this.lblApproved.Text = "325";
-            this.lblApproved.Click += new System.EventHandler(this.lblApproved_Click);
+            this.lblApproved.Text = "for display";
             // 
             // label13
             // 
@@ -322,6 +386,17 @@
             this.label13.Size = new System.Drawing.Size(96, 25);
             this.label13.TabIndex = 1;
             this.label13.Text = "Approved";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Image = global::CarBookRequest.Properties.Resources.check;
+            this.pictureBox8.Location = new System.Drawing.Point(18, 9);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(41, 33);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 11;
+            this.pictureBox8.TabStop = false;
             // 
             // gradientPanel3
             // 
@@ -343,10 +418,9 @@
             this.lblAvailableCars.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAvailableCars.Location = new System.Drawing.Point(84, 51);
             this.lblAvailableCars.Name = "lblAvailableCars";
-            this.lblAvailableCars.Size = new System.Drawing.Size(42, 25);
+            this.lblAvailableCars.Size = new System.Drawing.Size(102, 25);
             this.lblAvailableCars.TabIndex = 12;
-            this.lblAvailableCars.Text = "325";
-            this.lblAvailableCars.Click += new System.EventHandler(this.lblAvailableCars_Click);
+            this.lblAvailableCars.Text = "for display";
             // 
             // label11
             // 
@@ -358,6 +432,17 @@
             this.label11.Size = new System.Drawing.Size(132, 25);
             this.label11.TabIndex = 1;
             this.label11.Text = "Available Cars";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = global::CarBookRequest.Properties.Resources.carRent;
+            this.pictureBox7.Location = new System.Drawing.Point(15, 43);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(45, 41);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 11;
+            this.pictureBox7.TabStop = false;
             // 
             // gradientPanel2
             // 
@@ -379,10 +464,9 @@
             this.lblRentedCars.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRentedCars.Location = new System.Drawing.Point(84, 51);
             this.lblRentedCars.Name = "lblRentedCars";
-            this.lblRentedCars.Size = new System.Drawing.Size(42, 25);
+            this.lblRentedCars.Size = new System.Drawing.Size(102, 25);
             this.lblRentedCars.TabIndex = 12;
-            this.lblRentedCars.Text = "325";
-            this.lblRentedCars.Click += new System.EventHandler(this.lblRentedCars_Click);
+            this.lblRentedCars.Text = "for display";
             // 
             // label9
             // 
@@ -394,6 +478,17 @@
             this.label9.Size = new System.Drawing.Size(114, 25);
             this.label9.TabIndex = 1;
             this.label9.Text = "Rented Cars";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::CarBookRequest.Properties.Resources.cars;
+            this.pictureBox6.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(86, 55);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 11;
+            this.pictureBox6.TabStop = false;
             // 
             // gradientPanel1
             // 
@@ -415,10 +510,9 @@
             this.lblRenters.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRenters.Location = new System.Drawing.Point(84, 51);
             this.lblRenters.Name = "lblRenters";
-            this.lblRenters.Size = new System.Drawing.Size(42, 25);
+            this.lblRenters.Size = new System.Drawing.Size(102, 25);
             this.lblRenters.TabIndex = 12;
-            this.lblRenters.Text = "325";
-            this.lblRenters.Click += new System.EventHandler(this.lblRenters_Click);
+            this.lblRenters.Text = "for display";
             // 
             // label6
             // 
@@ -430,6 +524,17 @@
             this.label6.Size = new System.Drawing.Size(124, 25);
             this.label6.TabIndex = 1;
             this.label6.Text = "Total Renters";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = global::CarBookRequest.Properties.Resources.user;
+            this.pictureBox5.Location = new System.Drawing.Point(15, 43);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(45, 41);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 11;
+            this.pictureBox5.TabStop = false;
             // 
             // panelHeader
             // 
@@ -452,116 +557,6 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Dashboard";
             // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.Image = global::CarBookRequest.Properties.Resources.history;
-            this.pictureBox10.Location = new System.Drawing.Point(12, 11);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(45, 41);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 11;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Image = global::CarBookRequest.Properties.Resources.wrong;
-            this.pictureBox9.Location = new System.Drawing.Point(15, 9);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(47, 43);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 11;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Image = global::CarBookRequest.Properties.Resources.check;
-            this.pictureBox8.Location = new System.Drawing.Point(18, 9);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(41, 33);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 11;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = global::CarBookRequest.Properties.Resources.carRent;
-            this.pictureBox7.Location = new System.Drawing.Point(15, 43);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(45, 41);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 11;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::CarBookRequest.Properties.Resources.cars;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 38);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(86, 55);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 11;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = global::CarBookRequest.Properties.Resources.user;
-            this.pictureBox5.Location = new System.Drawing.Point(15, 43);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(45, 41);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 11;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::CarBookRequest.Properties.Resources.user;
-            this.pictureBox4.Location = new System.Drawing.Point(24, 551);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(64, 59);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::CarBookRequest.Properties.Resources.carRent;
-            this.pictureBox3.Location = new System.Drawing.Point(29, 236);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(57, 46);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::CarBookRequest.Properties.Resources.home;
-            this.pictureBox2.Location = new System.Drawing.Point(30, 148);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(57, 48);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::CarBookRequest.Properties.Resources.cars;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 69);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -575,31 +570,31 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelSidebar.ResumeLayout(false);
             this.panelSidebar.PerformLayout();
-            this.panelMain.ResumeLayout(false);
-            this.gradientPanel6.ResumeLayout(false);
-            this.gradientPanel6.PerformLayout();
-            this.gradientPanel5.ResumeLayout(false);
-            this.gradientPanel5.PerformLayout();
-            this.gradientPanel4.ResumeLayout(false);
-            this.gradientPanel4.PerformLayout();
-            this.gradientPanel3.ResumeLayout(false);
-            this.gradientPanel3.PerformLayout();
-            this.gradientPanel2.ResumeLayout(false);
-            this.gradientPanel2.PerformLayout();
-            this.gradientPanel1.ResumeLayout(false);
-            this.gradientPanel1.PerformLayout();
-            this.panelHeader.ResumeLayout(false);
-            this.panelHeader.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelMain.ResumeLayout(false);
+            this.gradientPanel6.ResumeLayout(false);
+            this.gradientPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.gradientPanel5.ResumeLayout(false);
+            this.gradientPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.gradientPanel4.ResumeLayout(false);
+            this.gradientPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.gradientPanel3.ResumeLayout(false);
+            this.gradientPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.gradientPanel2.ResumeLayout(false);
+            this.gradientPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.gradientPanel1.ResumeLayout(false);
+            this.gradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
             this.ResumeLayout(false);
 
         }
