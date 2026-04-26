@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -9,6 +10,10 @@ namespace CarBookRequest
     public partial class DashBoard : Form
     {
         HttpClient client = new HttpClient();
+
+        //  COLORS
+        Color defaultColor = Color.FromArgb(0, 192, 192); // sidebar color
+        Color activeColor = Color.FromArgb(0, 160, 215);  // highlight color
 
         public DashBoard()
         {
@@ -28,7 +33,6 @@ namespace CarBookRequest
 
                 if (response.IsSuccessStatusCode && data.success == true)
                 {
-                    // DISPLAY TO LABELS
                     lblRenters.Text = data.renters.ToString();
                     lblAvailableCars.Text = data.available.ToString();
                     lblApproved.Text = data.approved.ToString();
@@ -53,19 +57,49 @@ namespace CarBookRequest
         {
             await LoadDashboardStats();
 
+            //  DEFAULT ACTIVE BUTTON
+            SetActiveButton(btnDashboard);
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
+        // BUTTON HIGHLIGHT FUNCTION
+        private void SetActiveButton(Button activeBtn)
+        {
+            // reset all buttons
+            btnDashboard.BackColor = defaultColor;
+
+            // highlight selected
+            activeBtn.BackColor = activeColor;
+        }
+
+        // REQUEST CLICK
+        private void btnRequests_Click_1(object sender, EventArgs e)
+        {
+            SetActiveButton(btnRequests);
+
+            BookRequest br = new BookRequest();
+            br.Show();
+            this.Hide();
+        }
+
+        // LOGOUT
+        private void btnLogout_Click_1(object sender, EventArgs e)
         {
             LoginForm br = new LoginForm();
             br.Show();
             this.Hide();
         }
 
-        private void btnRequests_Click(object sender, EventArgs e)
+        private void btnDashboard_Click_1(object sender, EventArgs e)
         {
-            BookRequest br = new BookRequest();
-            br.Show();
+            SetActiveButton(btnDashboard);
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            SetActiveButton(btnReport);
+
+            Reports d = new Reports();
+            d.Show();
             this.Hide();
         }
     }

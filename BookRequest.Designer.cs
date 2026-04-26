@@ -35,12 +35,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.bookingDetailsControl1 = new CarBookRequest.BookingDetailsControl();
             this.panelSidebar = new CarBookRequest.GradientPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -49,7 +50,8 @@
             this.btnRequests = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnDashboard = new System.Windows.Forms.Button();
-            this.bookingDetailsControl1 = new CarBookRequest.BookingDetailsControl();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.btnReport = new System.Windows.Forms.Button();
             this.panelHeader.SuspendLayout();
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -60,6 +62,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -70,7 +73,7 @@
             this.panelHeader.ForeColor = System.Drawing.Color.White;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1038, 60);
+            this.panelHeader.Size = new System.Drawing.Size(1077, 60);
             this.panelHeader.TabIndex = 0;
             // 
             // label5
@@ -91,9 +94,9 @@
             this.panelMain.Controls.Add(this.panel1);
             this.panelMain.Controls.Add(this.panelHeader);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(262, 0);
+            this.panelMain.Location = new System.Drawing.Point(223, 0);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1038, 805);
+            this.panelMain.Size = new System.Drawing.Size(1077, 805);
             this.panelMain.TabIndex = 2;
             // 
             // dataGridView1
@@ -103,9 +106,10 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(445, 630);
+            this.dataGridView1.Size = new System.Drawing.Size(508, 650);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // panel1
             // 
@@ -117,7 +121,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 60);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1038, 80);
+            this.panel1.Size = new System.Drawing.Size(1077, 80);
             this.panel1.TabIndex = 1;
             // 
             // comboBox1
@@ -129,7 +133,7 @@
             "Approve",
             "Reject",
             "Pending"});
-            this.comboBox1.Location = new System.Drawing.Point(760, 27);
+            this.comboBox1.Location = new System.Drawing.Point(452, 28);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(176, 34);
             this.comboBox1.TabIndex = 2;
@@ -145,6 +149,16 @@
             this.btnSearch.Text = "Search Name";
             this.btnSearch.UseVisualStyleBackColor = false;
             // 
+            // txtSearch
+            // 
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtSearch.Location = new System.Drawing.Point(14, 26);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(278, 35);
+            this.txtSearch.TabIndex = 2;
+            this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.White;
@@ -156,24 +170,23 @@
             this.pictureBox5.TabIndex = 3;
             this.pictureBox5.TabStop = false;
             // 
-            // txtSearch
+            // bookingDetailsControl1
             // 
-            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtSearch.Location = new System.Drawing.Point(14, 26);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(278, 35);
-            this.txtSearch.TabIndex = 2;
-            this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bookingDetailsControl1.Location = new System.Drawing.Point(517, 143);
+            this.bookingDetailsControl1.Name = "bookingDetailsControl1";
+            this.bookingDetailsControl1.Size = new System.Drawing.Size(546, 650);
+            this.bookingDetailsControl1.TabIndex = 3;
             // 
             // panelSidebar
             // 
             this.panelSidebar.Angle = 90;
             this.panelSidebar.ColorBottom = System.Drawing.Color.DarkTurquoise;
             this.panelSidebar.ColorTop = System.Drawing.Color.PaleTurquoise;
+            this.panelSidebar.Controls.Add(this.pictureBox6);
+            this.panelSidebar.Controls.Add(this.btnReport);
+            this.panelSidebar.Controls.Add(this.pictureBox1);
             this.panelSidebar.Controls.Add(this.label3);
             this.panelSidebar.Controls.Add(this.label2);
-            this.panelSidebar.Controls.Add(this.pictureBox1);
             this.panelSidebar.Controls.Add(this.label4);
             this.panelSidebar.Controls.Add(this.label1);
             this.panelSidebar.Controls.Add(this.pictureBox4);
@@ -185,8 +198,19 @@
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSidebar.Location = new System.Drawing.Point(0, 0);
             this.panelSidebar.Name = "panelSidebar";
-            this.panelSidebar.Size = new System.Drawing.Size(262, 805);
+            this.panelSidebar.Size = new System.Drawing.Size(223, 805);
             this.panelSidebar.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::CarBookRequest.Properties.Resources.cars;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, -15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(331, 174);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -194,7 +218,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(26, 180);
+            this.label3.Location = new System.Drawing.Point(6, 163);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(215, 32);
             this.label3.TabIndex = 13;
@@ -206,22 +230,11 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(49, 208);
+            this.label2.Location = new System.Drawing.Point(29, 191);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(165, 32);
             this.label2.TabIndex = 12;
             this.label2.Text = "Management";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::CarBookRequest.Properties.Resources.cars;
-            this.pictureBox1.Location = new System.Drawing.Point(0, -16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(380, 188);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
@@ -229,7 +242,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(90, 683);
+            this.label4.Location = new System.Drawing.Point(84, 683);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(120, 20);
             this.label4.TabIndex = 10;
@@ -241,7 +254,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(88, 653);
+            this.label1.Location = new System.Drawing.Point(82, 653);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 32);
             this.label1.TabIndex = 9;
@@ -251,7 +264,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::CarBookRequest.Properties.Resources.user;
-            this.pictureBox4.Location = new System.Drawing.Point(24, 653);
+            this.pictureBox4.Location = new System.Drawing.Point(18, 653);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(64, 59);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -264,10 +277,10 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.Black;
-            this.btnLogout.Location = new System.Drawing.Point(12, 718);
+            this.btnLogout.Location = new System.Drawing.Point(6, 718);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Padding = new System.Windows.Forms.Padding(10);
-            this.btnLogout.Size = new System.Drawing.Size(233, 55);
+            this.btnLogout.Size = new System.Drawing.Size(214, 58);
             this.btnLogout.TabIndex = 7;
             this.btnLogout.Text = "Log out";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -277,9 +290,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::CarBookRequest.Properties.Resources.carRent;
-            this.pictureBox3.Location = new System.Drawing.Point(33, 360);
+            this.pictureBox3.Location = new System.Drawing.Point(18, 326);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(57, 46);
+            this.pictureBox3.Size = new System.Drawing.Size(47, 43);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
@@ -287,14 +300,15 @@
             // btnRequests
             // 
             this.btnRequests.BackColor = System.Drawing.Color.Transparent;
+            this.btnRequests.FlatAppearance.BorderSize = 0;
             this.btnRequests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRequests.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRequests.ForeColor = System.Drawing.Color.Black;
-            this.btnRequests.Location = new System.Drawing.Point(28, 354);
+            this.btnRequests.Location = new System.Drawing.Point(12, 315);
             this.btnRequests.Name = "btnRequests";
-            this.btnRequests.Size = new System.Drawing.Size(218, 56);
+            this.btnRequests.Size = new System.Drawing.Size(205, 63);
             this.btnRequests.TabIndex = 5;
-            this.btnRequests.Text = "          Book Requests";
+            this.btnRequests.Text = "  Requests";
             this.btnRequests.UseVisualStyleBackColor = false;
             this.btnRequests.Click += new System.EventHandler(this.btnRequests_Click);
             // 
@@ -302,9 +316,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::CarBookRequest.Properties.Resources.home;
-            this.pictureBox2.Location = new System.Drawing.Point(34, 272);
+            this.pictureBox2.Location = new System.Drawing.Point(17, 249);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(57, 48);
+            this.pictureBox2.Size = new System.Drawing.Size(52, 45);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -312,23 +326,43 @@
             // btnDashboard
             // 
             this.btnDashboard.BackColor = System.Drawing.Color.Transparent;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.Black;
-            this.btnDashboard.Location = new System.Drawing.Point(28, 267);
+            this.btnDashboard.Location = new System.Drawing.Point(12, 240);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(218, 56);
+            this.btnDashboard.Size = new System.Drawing.Size(205, 62);
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Text = "      Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click_1);
             // 
-            // bookingDetailsControl1
+            // pictureBox6
             // 
-            this.bookingDetailsControl1.Location = new System.Drawing.Point(455, 143);
-            this.bookingDetailsControl1.Name = "bookingDetailsControl1";
-            this.bookingDetailsControl1.Size = new System.Drawing.Size(556, 636);
-            this.bookingDetailsControl1.TabIndex = 3;
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::CarBookRequest.Properties.Resources.reports;
+            this.pictureBox6.Location = new System.Drawing.Point(15, 403);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(47, 43);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 27;
+            this.pictureBox6.TabStop = false;
+            // 
+            // btnReport
+            // 
+            this.btnReport.BackColor = System.Drawing.Color.Transparent;
+            this.btnReport.FlatAppearance.BorderSize = 0;
+            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.ForeColor = System.Drawing.Color.Black;
+            this.btnReport.Location = new System.Drawing.Point(9, 392);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(205, 63);
+            this.btnReport.TabIndex = 26;
+            this.btnReport.Text = "Reports";
+            this.btnReport.UseVisualStyleBackColor = false;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // BookRequest
             // 
@@ -354,6 +388,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -378,8 +413,10 @@
         private GradientPanel panelSidebar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private BookingDetailsControl bookingDetailsControl1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button btnReport;
     }
 }

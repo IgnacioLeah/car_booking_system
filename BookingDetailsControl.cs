@@ -16,6 +16,8 @@ namespace CarBookRequest
             InitializeComponent();
         }
 
+        public Action OnStatusChanged { get; internal set; }
+
         // SET DATA FROM GRID
         public void SetBooking(dynamic booking)
         {
@@ -29,7 +31,10 @@ namespace CarBookRequest
             lblReturn.Text = Convert.ToDateTime(booking.RETURN_DATE).ToShortDateString();
             lblDestination.Text = booking.DESTINATION;
             lblDuration.Text = booking.DURATION + " days";
-            lblPrice.Text = "₱" + booking.PRICE;
+
+            // ✅ FIXED PRICE FORMAT
+            lblPrice.Text = "₱" + Convert.ToDecimal(booking.PRICE).ToString("N2");
+
             lblStatus.Text = booking.BOOK_STATUS;
         }
 
@@ -115,7 +120,5 @@ namespace CarBookRequest
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-
-       
     }
 }

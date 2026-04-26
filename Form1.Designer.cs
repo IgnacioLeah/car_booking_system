@@ -28,18 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelSidebar = new CarBookRequest.GradientPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnLogout = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnRequests = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMain = new System.Windows.Forms.Panel();
             this.gradientPanel2 = new CarBookRequest.GradientPanel();
             this.lblApproved = new System.Windows.Forms.Label();
@@ -67,11 +55,20 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.panelSidebar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelSidebar = new CarBookRequest.GradientPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnRequests = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.btnReport = new System.Windows.Forms.Button();
             this.panelMain.SuspendLayout();
             this.gradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -86,163 +83,13 @@
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panelHeader.SuspendLayout();
+            this.panelSidebar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panelSidebar
-            // 
-            this.panelSidebar.Angle = 90;
-            this.panelSidebar.ColorBottom = System.Drawing.Color.DarkTurquoise;
-            this.panelSidebar.ColorTop = System.Drawing.Color.PaleTurquoise;
-            this.panelSidebar.Controls.Add(this.label4);
-            this.panelSidebar.Controls.Add(this.label1);
-            this.panelSidebar.Controls.Add(this.pictureBox4);
-            this.panelSidebar.Controls.Add(this.btnLogout);
-            this.panelSidebar.Controls.Add(this.pictureBox3);
-            this.panelSidebar.Controls.Add(this.btnRequests);
-            this.panelSidebar.Controls.Add(this.pictureBox2);
-            this.panelSidebar.Controls.Add(this.btnDashboard);
-            this.panelSidebar.Controls.Add(this.label3);
-            this.panelSidebar.Controls.Add(this.label2);
-            this.panelSidebar.Controls.Add(this.pictureBox1);
-            this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelSidebar.Location = new System.Drawing.Point(0, 0);
-            this.panelSidebar.Name = "panelSidebar";
-            this.panelSidebar.Size = new System.Drawing.Size(262, 827);
-            this.panelSidebar.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(91, 685);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 20);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "admin@gmail.com";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(89, 655);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 32);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Admin";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::CarBookRequest.Properties.Resources.user;
-            this.pictureBox4.Location = new System.Drawing.Point(25, 655);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(64, 59);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.BackColor = System.Drawing.Color.Salmon;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.Black;
-            this.btnLogout.Location = new System.Drawing.Point(13, 720);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Padding = new System.Windows.Forms.Padding(10);
-            this.btnLogout.Size = new System.Drawing.Size(233, 55);
-            this.btnLogout.TabIndex = 7;
-            this.btnLogout.Text = "Log out";
-            this.btnLogout.UseVisualStyleBackColor = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::CarBookRequest.Properties.Resources.carRent;
-            this.pictureBox3.Location = new System.Drawing.Point(30, 373);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(57, 46);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
-            // 
-            // btnRequests
-            // 
-            this.btnRequests.BackColor = System.Drawing.Color.Transparent;
-            this.btnRequests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRequests.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRequests.ForeColor = System.Drawing.Color.Black;
-            this.btnRequests.Location = new System.Drawing.Point(25, 367);
-            this.btnRequests.Name = "btnRequests";
-            this.btnRequests.Size = new System.Drawing.Size(218, 56);
-            this.btnRequests.TabIndex = 5;
-            this.btnRequests.Text = "          Book Requests";
-            this.btnRequests.UseVisualStyleBackColor = false;
-            this.btnRequests.Click += new System.EventHandler(this.btnRequests_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::CarBookRequest.Properties.Resources.home;
-            this.pictureBox2.Location = new System.Drawing.Point(31, 285);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(57, 48);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BackColor = System.Drawing.Color.Transparent;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.Black;
-            this.btnDashboard.Location = new System.Drawing.Point(25, 280);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(218, 56);
-            this.btnDashboard.TabIndex = 0;
-            this.btnDashboard.Text = "      Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(20, 179);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(215, 32);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Car Book Request";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(43, 207);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 32);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Management";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::CarBookRequest.Properties.Resources.cars;
-            this.pictureBox1.Location = new System.Drawing.Point(3, -15);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(380, 188);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // panelMain
             // 
@@ -255,9 +102,9 @@
             this.panelMain.Controls.Add(this.gradientPanel1);
             this.panelMain.Controls.Add(this.panelHeader);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(262, 0);
+            this.panelMain.Location = new System.Drawing.Point(223, 0);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(948, 827);
+            this.panelMain.Size = new System.Drawing.Size(1077, 805);
             this.panelMain.TabIndex = 0;
             // 
             // gradientPanel2
@@ -268,9 +115,9 @@
             this.gradientPanel2.Controls.Add(this.lblApproved);
             this.gradientPanel2.Controls.Add(this.label13);
             this.gradientPanel2.Controls.Add(this.pictureBox8);
-            this.gradientPanel2.Location = new System.Drawing.Point(24, 401);
+            this.gradientPanel2.Location = new System.Drawing.Point(92, 437);
             this.gradientPanel2.Name = "gradientPanel2";
-            this.gradientPanel2.Size = new System.Drawing.Size(284, 180);
+            this.gradientPanel2.Size = new System.Drawing.Size(284, 172);
             this.gradientPanel2.TabIndex = 13;
             // 
             // lblApproved
@@ -301,7 +148,7 @@
             this.pictureBox8.Image = global::CarBookRequest.Properties.Resources.check;
             this.pictureBox8.Location = new System.Drawing.Point(3, 0);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(94, 90);
+            this.pictureBox8.Size = new System.Drawing.Size(113, 104);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 11;
             this.pictureBox8.TabStop = false;
@@ -314,9 +161,9 @@
             this.gradientPanel8.Controls.Add(this.pictureBox7);
             this.gradientPanel8.Controls.Add(this.lblAvailableCars);
             this.gradientPanel8.Controls.Add(this.label11);
-            this.gradientPanel8.Location = new System.Drawing.Point(643, 159);
+            this.gradientPanel8.Location = new System.Drawing.Point(711, 195);
             this.gradientPanel8.Name = "gradientPanel8";
-            this.gradientPanel8.Size = new System.Drawing.Size(284, 180);
+            this.gradientPanel8.Size = new System.Drawing.Size(284, 211);
             this.gradientPanel8.TabIndex = 14;
             // 
             // pictureBox7
@@ -360,9 +207,9 @@
             this.gradientPanel7.Controls.Add(this.lblRentedCars);
             this.gradientPanel7.Controls.Add(this.pictureBox6);
             this.gradientPanel7.Controls.Add(this.label9);
-            this.gradientPanel7.Location = new System.Drawing.Point(334, 159);
+            this.gradientPanel7.Location = new System.Drawing.Point(402, 195);
             this.gradientPanel7.Name = "gradientPanel7";
-            this.gradientPanel7.Size = new System.Drawing.Size(284, 180);
+            this.gradientPanel7.Size = new System.Drawing.Size(284, 211);
             this.gradientPanel7.TabIndex = 13;
             // 
             // lblRentedCars
@@ -406,9 +253,9 @@
             this.gradientPanel6.Controls.Add(this.lblPending);
             this.gradientPanel6.Controls.Add(this.label17);
             this.gradientPanel6.Controls.Add(this.pictureBox10);
-            this.gradientPanel6.Location = new System.Drawing.Point(643, 401);
+            this.gradientPanel6.Location = new System.Drawing.Point(711, 437);
             this.gradientPanel6.Name = "gradientPanel6";
-            this.gradientPanel6.Size = new System.Drawing.Size(284, 180);
+            this.gradientPanel6.Size = new System.Drawing.Size(284, 172);
             this.gradientPanel6.TabIndex = 15;
             // 
             // lblPending
@@ -439,7 +286,7 @@
             this.pictureBox10.Image = global::CarBookRequest.Properties.Resources.history;
             this.pictureBox10.Location = new System.Drawing.Point(0, 0);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(94, 90);
+            this.pictureBox10.Size = new System.Drawing.Size(108, 112);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 11;
             this.pictureBox10.TabStop = false;
@@ -452,9 +299,9 @@
             this.gradientPanel5.Controls.Add(this.lblRejected);
             this.gradientPanel5.Controls.Add(this.label15);
             this.gradientPanel5.Controls.Add(this.pictureBox9);
-            this.gradientPanel5.Location = new System.Drawing.Point(334, 401);
+            this.gradientPanel5.Location = new System.Drawing.Point(402, 437);
             this.gradientPanel5.Name = "gradientPanel5";
-            this.gradientPanel5.Size = new System.Drawing.Size(284, 180);
+            this.gradientPanel5.Size = new System.Drawing.Size(284, 172);
             this.gradientPanel5.TabIndex = 14;
             // 
             // lblRejected
@@ -462,7 +309,7 @@
             this.lblRejected.AutoSize = true;
             this.lblRejected.BackColor = System.Drawing.Color.Transparent;
             this.lblRejected.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRejected.Location = new System.Drawing.Point(131, 97);
+            this.lblRejected.Location = new System.Drawing.Point(138, 97);
             this.lblRejected.Name = "lblRejected";
             this.lblRejected.Size = new System.Drawing.Size(123, 30);
             this.lblRejected.TabIndex = 12;
@@ -485,7 +332,7 @@
             this.pictureBox9.Image = global::CarBookRequest.Properties.Resources.wrong;
             this.pictureBox9.Location = new System.Drawing.Point(3, 0);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(95, 90);
+            this.pictureBox9.Size = new System.Drawing.Size(111, 112);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 11;
             this.pictureBox9.TabStop = false;
@@ -498,9 +345,9 @@
             this.gradientPanel1.Controls.Add(this.lblRenters);
             this.gradientPanel1.Controls.Add(this.label6);
             this.gradientPanel1.Controls.Add(this.pictureBox5);
-            this.gradientPanel1.Location = new System.Drawing.Point(24, 159);
+            this.gradientPanel1.Location = new System.Drawing.Point(92, 195);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(284, 180);
+            this.gradientPanel1.Size = new System.Drawing.Size(284, 211);
             this.gradientPanel1.TabIndex = 1;
             // 
             // lblRenters
@@ -544,7 +391,7 @@
             this.panelHeader.ForeColor = System.Drawing.Color.White;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(948, 60);
+            this.panelHeader.Size = new System.Drawing.Size(1077, 60);
             this.panelHeader.TabIndex = 0;
             // 
             // label5
@@ -557,23 +404,204 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Dashboard";
             // 
+            // panelSidebar
+            // 
+            this.panelSidebar.Angle = 90;
+            this.panelSidebar.ColorBottom = System.Drawing.Color.DarkTurquoise;
+            this.panelSidebar.ColorTop = System.Drawing.Color.PaleTurquoise;
+            this.panelSidebar.Controls.Add(this.pictureBox11);
+            this.panelSidebar.Controls.Add(this.btnReport);
+            this.panelSidebar.Controls.Add(this.label3);
+            this.panelSidebar.Controls.Add(this.label2);
+            this.panelSidebar.Controls.Add(this.pictureBox1);
+            this.panelSidebar.Controls.Add(this.label4);
+            this.panelSidebar.Controls.Add(this.label1);
+            this.panelSidebar.Controls.Add(this.pictureBox4);
+            this.panelSidebar.Controls.Add(this.btnLogout);
+            this.panelSidebar.Controls.Add(this.pictureBox3);
+            this.panelSidebar.Controls.Add(this.btnRequests);
+            this.panelSidebar.Controls.Add(this.pictureBox2);
+            this.panelSidebar.Controls.Add(this.btnDashboard);
+            this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelSidebar.Location = new System.Drawing.Point(0, 0);
+            this.panelSidebar.Name = "panelSidebar";
+            this.panelSidebar.Size = new System.Drawing.Size(223, 805);
+            this.panelSidebar.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(7, 167);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(215, 32);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Car Book Request";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(25, 195);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(165, 32);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Management";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::CarBookRequest.Properties.Resources.cars;
+            this.pictureBox1.Location = new System.Drawing.Point(-4, -21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(331, 174);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(82, 683);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 20);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "admin@gmail.com";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(80, 653);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 32);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Admin";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::CarBookRequest.Properties.Resources.user;
+            this.pictureBox4.Location = new System.Drawing.Point(16, 653);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(64, 59);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 19;
+            this.pictureBox4.TabStop = false;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.Salmon;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.Black;
+            this.btnLogout.Location = new System.Drawing.Point(4, 718);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Padding = new System.Windows.Forms.Padding(10);
+            this.btnLogout.Size = new System.Drawing.Size(214, 58);
+            this.btnLogout.TabIndex = 18;
+            this.btnLogout.Text = "Log out";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click_1);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::CarBookRequest.Properties.Resources.carRent;
+            this.pictureBox3.Location = new System.Drawing.Point(15, 342);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 41);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btnRequests
+            // 
+            this.btnRequests.BackColor = System.Drawing.Color.Transparent;
+            this.btnRequests.FlatAppearance.BorderSize = 0;
+            this.btnRequests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRequests.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRequests.ForeColor = System.Drawing.Color.Black;
+            this.btnRequests.Location = new System.Drawing.Point(9, 333);
+            this.btnRequests.Name = "btnRequests";
+            this.btnRequests.Size = new System.Drawing.Size(205, 57);
+            this.btnRequests.TabIndex = 16;
+            this.btnRequests.Text = "  Requests";
+            this.btnRequests.UseVisualStyleBackColor = false;
+            this.btnRequests.Click += new System.EventHandler(this.btnRequests_Click_1);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::CarBookRequest.Properties.Resources.home;
+            this.pictureBox2.Location = new System.Drawing.Point(15, 261);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 47);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BackColor = System.Drawing.Color.Transparent;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.Black;
+            this.btnDashboard.Location = new System.Drawing.Point(9, 254);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(205, 62);
+            this.btnDashboard.TabIndex = 14;
+            this.btnDashboard.Text = "      Dashboard";
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click_1);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox11.Image = global::CarBookRequest.Properties.Resources.reports;
+            this.pictureBox11.Location = new System.Drawing.Point(15, 415);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(47, 43);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 27;
+            this.pictureBox11.TabStop = false;
+            // 
+            // btnReport
+            // 
+            this.btnReport.BackColor = System.Drawing.Color.Transparent;
+            this.btnReport.FlatAppearance.BorderSize = 0;
+            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.ForeColor = System.Drawing.Color.Black;
+            this.btnReport.Location = new System.Drawing.Point(9, 404);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(205, 63);
+            this.btnReport.TabIndex = 26;
+            this.btnReport.Text = "Reports";
+            this.btnReport.UseVisualStyleBackColor = false;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1210, 827);
+            this.ClientSize = new System.Drawing.Size(1300, 805);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelSidebar);
             this.Name = "DashBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panelSidebar.ResumeLayout(false);
-            this.panelSidebar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelMain.ResumeLayout(false);
             this.gradientPanel2.ResumeLayout(false);
             this.gradientPanel2.PerformLayout();
@@ -595,25 +623,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
+            this.panelSidebar.ResumeLayout(false);
+            this.panelSidebar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private GradientPanel panelSidebar;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelMain;
-        private System.Windows.Forms.Button btnDashboard;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btnRequests;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
         private GradientPanel gradientPanel1;
         private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Label label5;
@@ -640,6 +662,20 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox7;
         private GradientPanel gradientPanel2;
+        private GradientPanel panelSidebar;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnRequests;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Button btnReport;
     }
 }
 

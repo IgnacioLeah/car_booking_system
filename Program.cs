@@ -16,7 +16,7 @@ namespace CarBookRequest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BookRequest());
+            Application.Run(new Reports());
         }
     }
 }
