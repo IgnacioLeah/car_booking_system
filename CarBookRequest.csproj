@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookingDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookingDetailsControl.Designer.cs">
+      <DependentUpon>BookingDetailsControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="BookRequest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     <Compile Include="Microsoft\VisualBasic\Interaction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BookingDetailsControl.resx">
+      <DependentUpon>BookingDetailsControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BookRequest.resx">
       <DependentUpon>BookRequest.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,6 +141,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\loc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\date.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\des.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\peso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\notes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

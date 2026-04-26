@@ -31,6 +31,7 @@
             this.gradientPanel1 = new CarBookRequest.GradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.gradientPanel2 = new CarBookRequest.GradientPanel();
+            this.btnTogglePassword = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
@@ -39,7 +40,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnTogglePassword = new System.Windows.Forms.Button();
             this.gradientPanel1.SuspendLayout();
             this.gradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -91,6 +91,15 @@
             this.gradientPanel2.Name = "gradientPanel2";
             this.gradientPanel2.Size = new System.Drawing.Size(464, 495);
             this.gradientPanel2.TabIndex = 1;
+            // 
+            // btnTogglePassword
+            // 
+            this.btnTogglePassword.Location = new System.Drawing.Point(343, 332);
+            this.btnTogglePassword.Name = "btnTogglePassword";
+            this.btnTogglePassword.Size = new System.Drawing.Size(41, 44);
+            this.btnTogglePassword.TabIndex = 1;
+            this.btnTogglePassword.UseVisualStyleBackColor = true;
+            this.btnTogglePassword.Click += new System.EventHandler(this.btnTogglePassword_Click_1);
             // 
             // btnLogin
             // 
@@ -181,15 +190,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnTogglePassword
-            // 
-            this.btnTogglePassword.Location = new System.Drawing.Point(343, 332);
-            this.btnTogglePassword.Name = "btnTogglePassword";
-            this.btnTogglePassword.Size = new System.Drawing.Size(41, 44);
-            this.btnTogglePassword.TabIndex = 1;
-            this.btnTogglePassword.UseVisualStyleBackColor = true;
-            this.btnTogglePassword.Click += new System.EventHandler(this.btnTogglePassword_Click_1);
             // 
             // LoginForm
             // 
