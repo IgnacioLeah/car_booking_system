@@ -1,13 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarBookRequest
@@ -16,9 +10,28 @@ namespace CarBookRequest
     {
         private readonly HttpClient client = new HttpClient();
 
+        // PASSWORD STATE
+        private bool isPasswordHidden = true;
+
         public LoginForm()
         {
             InitializeComponent();
+
+            //PASSWORD HIDDEN
+            txtPassword.UseSystemPasswordChar = true;
+
+            // SET DEFAULT ICON
+            btnTogglePassword.Text = "👁";
+
+            // FOCUS USERNAME
+            this.Load += LoginForm_Load;
+        }
+
+        // AUTO FOCUS + HIGHLIGHT USERNAME
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            txtUsername.Focus();
+            txtUsername.SelectAll(); // highlight text
         }
 
         private async void btnLogin_Click(object sender, EventArgs e)
@@ -54,8 +67,8 @@ namespace CarBookRequest
                 {
                     MessageBox.Show("Login Successful!");
 
-                    DashBoard br = new DashBoard();
-                    br.Show();
+                    DashBoard dashboard = new DashBoard();
+                    dashboard.Show();
                     this.Hide();
                 }
                 else
@@ -66,6 +79,23 @@ namespace CarBookRequest
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        //SHOW / HIDE PASSWORD
+        private void btnTogglePassword_Click_1(object sender, EventArgs e)
+        {
+            if (isPasswordHidden)
+            {
+                txtPassword.UseSystemPasswordChar = false;
+                btnTogglePassword.Text = "🙈";
+                isPasswordHidden = false;
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = true;
+                btnTogglePassword.Text = "👁";
+                isPasswordHidden = true;
             }
         }
     }
